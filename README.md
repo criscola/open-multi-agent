@@ -16,13 +16,13 @@ Build AI agent teams that work together. One agent plans, another implements, a 
 ## Quick Start
 
 ```bash
-npm install github:JackChen-me/open-multi-agent
+npm install @jackchen_me/open-multi-agent
 ```
 
 Set `ANTHROPIC_API_KEY` (and optionally `OPENAI_API_KEY`) in your environment.
 
 ```typescript
-import { OpenMultiAgent } from 'open-multi-agent'
+import { OpenMultiAgent } from '@jackchen_me/open-multi-agent'
 
 const orchestrator = new OpenMultiAgent({ defaultModel: 'claude-sonnet-4-6' })
 
@@ -44,8 +44,8 @@ console.log(result.output)
 This is where it gets interesting. Three agents, one goal:
 
 ```typescript
-import { OpenMultiAgent } from 'open-multi-agent'
-import type { AgentConfig } from 'open-multi-agent'
+import { OpenMultiAgent } from '@jackchen_me/open-multi-agent'
+import type { AgentConfig } from '@jackchen_me/open-multi-agent'
 
 const architect: AgentConfig = {
   name: 'architect',
@@ -126,7 +126,7 @@ const result = await orchestrator.runTasks(team, [
 
 ```typescript
 import { z } from 'zod'
-import { defineTool, Agent, ToolRegistry, ToolExecutor, registerBuiltInTools } from 'open-multi-agent'
+import { defineTool, Agent, ToolRegistry, ToolExecutor, registerBuiltInTools } from '@jackchen_me/open-multi-agent'
 
 const searchTool = defineTool({
   name: 'web_search',
@@ -192,7 +192,7 @@ const result = await orchestrator.runTeam(team, 'Build a CLI tool that converts 
 <summary><b>Streaming Output</b></summary>
 
 ```typescript
-import { Agent, ToolRegistry, ToolExecutor, registerBuiltInTools } from 'open-multi-agent'
+import { Agent, ToolRegistry, ToolExecutor, registerBuiltInTools } from '@jackchen_me/open-multi-agent'
 
 const registry = new ToolRegistry()
 registerBuiltInTools(registry)

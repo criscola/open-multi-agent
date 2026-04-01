@@ -1,5 +1,5 @@
 {
-  "name": "open-multi-agent",
+  "name": "@jackchen_me/open-multi-agent",
   "version": "0.1.0",
   "description": "Production-grade multi-agent orchestration framework. Model-agnostic, supports team collaboration, task scheduling, and inter-agent communication.",
   "type": "module",
