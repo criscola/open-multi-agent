@@ -2,10 +2,8 @@
 
 Build AI agent teams that work together. One agent plans, another implements, a third reviews — the framework handles task scheduling, dependencies, and communication automatically.
 
-[![npm version](https://img.shields.io/npm/v/open-multi-agent)](https://www.npmjs.com/package/open-multi-agent)
-[![npm downloads](https://img.shields.io/npm/dm/open-multi-agent)](https://www.npmjs.com/package/open-multi-agent)
 [![GitHub stars](https://img.shields.io/github/stars/JackChen-me/open-multi-agent)](https://github.com/JackChen-me/open-multi-agent/stargazers)
-[![license](https://img.shields.io/npm/l/open-multi-agent)](./LICENSE)
+[![license](https://img.shields.io/github/license/JackChen-me/open-multi-agent)](./LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6-blue)](https://www.typescriptlang.org/)
 
 ## Why Open Multi-Agent?
@@ -18,7 +16,7 @@ Build AI agent teams that work together. One agent plans, another implements, a 
 ## Quick Start
 
 ```bash
-npm install open-multi-agent
+npm install github:JackChen-me/open-multi-agent
 ```
 
 Set `ANTHROPIC_API_KEY` (and optionally `OPENAI_API_KEY`) in your environment.
